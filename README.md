@@ -1,10 +1,4 @@
-## Sentry
-
-https://bett3r-dev.sentry.io/projects/integrador-ecommerce/?project=4508660309426176
-
-## MixPanel
-
-https://mixpanel.com/project/3547020/view/4048116/app/boards#id=8956584
+# Pair Programming Interview Frontend
 
 ## Folder Structure
 
@@ -12,7 +6,7 @@ The project is organized into the following folders:
 
 ```
 /src
-  /assets # Static assets like images, fonts, etc.
+  /assets # Static assets like images, fonts, etc. 
   /components # Reusable React components.
     /common # Agnostic from Application.
     /application # Made for this Application.
@@ -74,8 +68,12 @@ The `package.json` includes several useful scripts:
 - **preview**: Previews the production build locally.
 
 ## Getting Started
-
 1. Clone the repository.
-2. Install dependencies using `npm install` or `yarn install`.
-3. Start the development server using `npm run dev` or `yarn dev`.
-4. Open your browser and navigate to `http://localhost:3000`.
+2. Install dependencies using `yarn`.
+3. Start the development server using `yarn dev`.
+
+## Backend Service
+1. Install Docker Desktop [here](https://www.docker.com/products/docker-desktop/)
+2. Make sure docker is running locally.
+3. From the root folder execute `docker compose up`. It will download de image if not present and lift the backend in port `1984`.
+
