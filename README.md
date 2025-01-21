@@ -76,4 +76,5 @@ The `package.json` includes several useful scripts:
 1. Install Docker Desktop [here](https://www.docker.com/products/docker-desktop/)
 2. Make sure docker is running locally.
 3. From the root folder execute `docker compose up`. It will download de image if not present and lift the backend in port `1984`.
+4. Navigate to [http://localhost:1984/healthcheck](http://localhost:1984/healthcheck) to test the backend is up and running. The expected outcome is to see the current date in ISO format.
 
