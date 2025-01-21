@@ -1,12 +1,15 @@
 import { RouterProvider } from 'react-router-dom';
 import router from './routes';
+import { ProvideBackend} from '@contexts/useBackend';
 
 function App() {
 
   return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
+    <ProvideBackend>
+      <div>
+        <RouterProvider router={router} />
+      </div>
+    </ProvideBackend>
   );
 }
 
