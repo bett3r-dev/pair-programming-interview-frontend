@@ -1,0 +1,6 @@
+services:
+  backend:
+    image: bett3rdev/pair-programming-interview
+    ports:
+      - "1984:1984"
+    command: ["node", "index.js"]
