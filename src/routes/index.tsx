@@ -3,7 +3,7 @@ import VetShops from '../pages/VetShops';
 
 const router = createBrowserRouter([
   {
-    path: '/vet-shops',
+    path: '*',
     element: <VetShops />,
   },
 ]);

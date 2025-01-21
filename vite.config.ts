@@ -1,4 +1,3 @@
-import { sentryVitePlugin } from "@sentry/vite-plugin";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import viteCompression from "vite-plugin-compression";
@@ -6,10 +5,8 @@ import * as path from 'path'
 
 export default defineConfig({
   plugins: [react(), // Enable Brotli compression
-  viteCompression({ algorithm: "brotliCompress" }), sentryVitePlugin({
-    org: "bett3r-dev",
-    project: "integrador-ecommerce"
-  })],
+  viteCompression({ algorithm: "brotliCompress" }), 
+  ],
   resolve: {
     alias: {
       '@contexts': path.resolve(__dirname, 'src/contexts'),
